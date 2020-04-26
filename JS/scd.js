@@ -18,7 +18,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.*/            
+SOFTWARE.*/
 
 
 //get the IP addresses associated with an account
@@ -122,7 +122,7 @@ getIPs(function(ip){
     else{
         check = true;
         try {
-            pip = "Your public IP addresses: " + jip + " - " + jcountry_code;
+            pip = "Your public IP addresses: " + jip + " - " + jcountryCode;
         }
         catch(error) {
             pip = "Your public IP addresses: " + ip;
@@ -132,7 +132,7 @@ getIPs(function(ip){
     if(check != true){
         pip = "Your public IP addresses: " + jip;
     }
-    
+
     li.textContent = "Your public IP addresses: " + jip;
     el.insertBefore( li, el.firstChild );
 });

@@ -1,16 +1,40 @@
-function getgeoip(json){
-    jip = json.query;
-    jcountry_code = json.countryCode;
+function getgeoip(json) {
+    /*  old globals
+        jip = json.query;
+        jcountry_code = json.countryCode;
+        jcountry = json.country;
+        jregion = json.regionName;
+        jcity = json.city;
+        jpostal_code = json.postal_code;
+        jcontinent_code = json.continent_code;
+        jlatitude = json.latitude;
+        jlongitude = json.longitude;
+        jdma_code = json.dma_code;
+        jarea_code = json.area_code;
+        jasn = json.asn;
+        jisp = json.isp;
+        jtimezone = json.timezone;
+    */
+
     jcountry = json.country;
-    jregion = json.regionName;
+    jcountryCode = json.countryCode;
+    jregion = json.region;
+    jregionName = json.regionName;
     jcity = json.city;
-    jpostal_code = json.postal_code;
-    jcontinent_code = json.continent_code;
-    jlatitude = json.latitude;
-    jlongitude = json.longitude;
-    jdma_code = json.dma_code;
-    jarea_code = json.area_code;
-    jasn = json.asn;
-    jisp = json.isp;
+    jzip = json.zip;
+    jlat = json.lat;
+    jlon = json.lon;
     jtimezone = json.timezone;
+    jisp = json.isp;
+    jorg = json.org;
+    jas = json.as;
+    jreverse = json.reverse;
+    jmobile = json.mobile;
+    jproxy = json.proxy;
+    jip = json.query;
+    jstatus = json.status;
+    jmessage = json.message;
+    jdns = json.dns;
+    jdnsip = jdns.ip;
+    jdnsinfo = jdns.geo;
 }
