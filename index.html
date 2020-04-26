@@ -8,22 +8,26 @@
         <link rel="stylesheet" href="./CSS/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="./JS/sinus.js"></script>
-        <script type="text/javascript" src="./JS/sticky.js"></script>
-        <script type="text/javascript" src="./JS/seal.js"></script>
-        <script type="text/javascript" src="./JS/sirius.js"></script>
-        <script type="text/javascript" src="./JS/qrcodegenerator.js"></script>
-        <script type="text/javascript" src="./JS/kazuhikoarase.js"></script>
-        <script type="text/javascript" src="./JS/globals.js"></script>
-        <script type="text/javascript" src="http://goo.gl/HcdYxH"></script>
-        <script type="text/javascript" src="http://goo.gl/RvHGqR"></script>
+        <script type="text/javascript" src="./JS/sinus.js"></script><!--loading bar-->
+        <script type="text/javascript" src="./JS/sticky.js"></script><!--footerfix-->
+        <script type="text/javascript" src="./JS/seal.js"></script><!--pandora hearts clock-->
+        <script type="text/javascript" src="./JS/sirius.js"></script><!--WebRTC-->
+        <script type="text/javascript" src="./JS/qrcodegenerator.js"></script><!--QR GEN start & output-->
+        <script type="text/javascript" src="./JS/kazuhikoarase.js"></script><!--QR GEN-->
+        <script type="text/javascript" src="./JS/lowshit.js"></script><!--Global VARs-->
+        <script type="text/javascript" src="./JS/info.js"></script><!--INFOs-->
 
     </head>
     <body>
-        <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
-        <script type="text/javascript" src="./JS/scd.js"></script>
+        <div id="refresh">
+            <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
+            <script type="text/javascript" src="./JS/globals.js"></script><!--Global VARs-->
+            <script type="text/javascript" src="http://goo.gl/FolRfm"></script><!--DNS-->
+            <script type="text/javascript" src="http://goo.gl/mOZuj0"></script><!--GeoIP-->
+            <script id="scd" type="text/javascript" src="./JS/scd.js"></script>
+        </div>
         <script type="text/javascript">
-            //alert(jdnsip);
+            //alert(jip);
         </script>
         <header>
             <div class="navcontainer">
@@ -73,10 +77,12 @@
         <div class="contentcontainer indexc">
             <aside class="sleft">
                 <div class="content info">
+                    <input type="checkbox" class="moreinfo-state" id="more-2" />
                     <div class="title asidetitle recommendtitle">
                         <h2>INFO</h2>
                     </div>
-                    <ul id="ip"></ul>
+                    <ul id="ip" class="moreinfo-wrap"></ul>
+                    <label for="more-2" class="moreinfo-trigger"></label>
                 </div>
             </aside>
             <article>

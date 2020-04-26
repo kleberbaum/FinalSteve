@@ -7,7 +7,7 @@ $(document).ready(function() {
         var minutes = now.getMinutes();
         var seconds = now.getSeconds();
         var abyss = (24 * 60 * 60) - ((hours * 60 * 60) + (minutes * 60) + seconds);
-            
+
         if(hours == 0)
         {
             $('#seal').prop('src', "./PIC/uhr12.gif");

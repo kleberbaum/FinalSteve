@@ -1,5 +1,5 @@
 /* CSS-Datei */
-@font-face 
+@font-face
 {
     font-family: Origam;
     src: url("../Fonts/Origam.ttf");
@@ -148,9 +148,87 @@ html
 {
     background-image: url(../PIC/giphy4.gif);
     background-size: auto;
+    background-position: 50% 42px;
 }
 
-body 
+h1
+{
+    font-family: Origam;
+    font-size: 40px;
+    line-height: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h2
+{
+    display:inline;
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 1,5em;
+    color: rgba(255, 0, 0, 0.7);
+    padding: 5px;
+}
+
+h3
+{
+    display:inline;
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 1,5em;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+h4
+{
+    display:inline;
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 1,5em;
+    color: rgba(255, 0, 0, 0.5);
+    border:none;
+}
+
+p
+{
+    line-height: 1.5em;
+    padding: 10px 20px 10px 20px;
+}
+
+dt
+{
+    line-height: 1.5em;
+    padding: 10px 20px 10px 20px;
+}
+
+dd
+{
+    line-height: 1.5em;
+    padding: 10px 20px 10px 20px;
+}
+
+dl
+{
+    line-height: 1.5em;
+    padding: 10px 20px 10px 20px;
+}
+
+a
+{
+    text-decoration: none;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: #ADA;
+}
+
+body
 {
     width: 100%;
     font-family: Ubuntu;
@@ -171,10 +249,7 @@ aside
 
 aside a
 {
-    text-decoration: none;
-    line-height: 1.5em;
-    color: rgba(255, 255, 255, 0.5);
-    padding-left: 10px;
+    
 }
 
 article
@@ -192,12 +267,6 @@ section
 {
     color: #fff;
     padding-bottom: 8px;
-}
-
-section a 
-{
-    text-decoration: underline;
-    color: #e8e8e8;
 }
 
 footer
@@ -226,6 +295,7 @@ footer
 
 .navtop a
 {
+    text-decoration: none;
     font-family: Ubuntu,sans-serif;
     color: #fff;
 }
@@ -251,13 +321,14 @@ footer
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navtop ul li:hover > ul.level2 
+.navtop ul li:hover > ul.level2
 {
     visibility: visible;
 }
 
-.navtop ul li:hover > ol.level2 
+.navtop ul li:hover > ol.level2
 {
+    text-decoration: none;
     visibility: visible;
 }
 
@@ -276,13 +347,13 @@ footer
     background-image: url(../PIC/gg.gif);
 }
 
-.navtop ol.level2 li 
+.navtop ol.level2 li
 {
     list-style: none;
     color: #fff;
 }
 
-.navtop ul.level2 li 
+.navtop ul.level2 li
 {
     list-style: none;
     color: #fff;
@@ -314,12 +385,6 @@ footer
 .creativetitlecontainer
 {
     z-index: 0;
-    min-width: 170px;
-    max-width: 220px;
-    min-height: 170px;
-    max-height: 220px;
-    width: 14vw;
-    height: 14vw;
     border-radius: 100%;
     transform: rotate(-360deg);
     transition: box-shadow 0.5s linear, transform 0.5s linear;
@@ -339,11 +404,11 @@ footer
     justify-content: center;
     align-items: center;
     min-width: 170px;
-    width: 14vw;
     max-width: 220px;
     min-height: 170px;
-    height: 14vw;
     max-height: 220px;
+    width: 14vw;
+    height: 14vw;
 }
 
 #titlejapan
@@ -380,7 +445,7 @@ footer
 
 .indexc
 {
-    max-height: 766px;
+    max-height: 860px;
 }
 
 .indexc .sright
@@ -563,27 +628,26 @@ footer
 .toc a
 {
     font-size: 14px;
+    padding-left: 10px;
     text-decoration: none;
-}
-
-.toc a:hover
-{
-    color: #ADA;
 }
 
 .info
 {
     width: 250px;
     font-size: 14px;
-    text-align: left;
-    list-style: none;
     padding: 8px 0px 8px 0px;
 }
 
 .info ul
 {
     list-style: none;
-    padding: 10px 20px 10px 20px;
+    padding: 8px 0px 8px 10px;
+}
+
+.info ul li a
+{
+    
 }
 
 .sright
@@ -624,13 +688,13 @@ footer
 .recommend a
 {
     font-size: 14px;
-    text-decoration: none;
+    padding-left: 10px;
 }
 
 .vid
 {
     display: block;
-    width: 236px; 
+    width: 236px;
     height: 189px;
     margin: 8px 7px 8px 7px;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0);
@@ -643,85 +707,9 @@ img
     height: auto;
 }
 
-a:hover 
-{
-    color: #ADA;
-}
-
 .active
 {
 
-}
-
-h1 
-{
-    font-family: Origam;
-    font-size: 40px;
-    line-height: 1.5em;
-    font-weight: bolder;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-h2 
-{
-    display:inline;
-    font-size: 23px;
-    font-weight: lighter;
-    line-height: 1,5em;
-    color: rgba(255, 0, 0, 0.7);
-    padding: 5px;
-}
-
-h3 
-{
-    display:inline;
-    font-size: 23px;
-    font-weight: lighter;
-    line-height: 1,5em;
-    color: rgb(255, 255, 255);
-    padding: 5px;
-}
-
-h4 
-{
-    display:inline;
-    font-size: 23px;
-    font-weight: lighter;
-    line-height: 1,5em;
-    color: rgba(255, 0, 0, 0.5);
-    border:none;
-}
-
-p 
-{
-    line-height: 1.5em;
-    padding: 10px 20px 10px 20px;
-}
-
-dt
-{
-    line-height: 1.5em;
-    padding: 10px 20px 10px 20px;
-}
-
-dd
-{
-    line-height: 1.5em;
-    padding: 10px 20px 10px 20px;
-}
-
-dl
-{
-    line-height: 1.5em;
-    padding: 10px 20px 10px 20px;
-}
-
-a
-{
-    text-decoration: none;
-    line-height: 1.5em;
-    color: rgba(255, 255, 255, 0.5);
 }
 
 ol
@@ -790,10 +778,10 @@ ol
 {
     text-decoration: none;
     line-height: 1.5em;
-    color: rgba(255, 255, 255, 0.5);
     padding-left: 10px;
 }
 .ZGSJitem:hover > a{
+    text-decoration: underline;
     color: #ADA;
 }
 
@@ -927,5 +915,33 @@ ol
     width: 230px;
     height: auto;
     margin: 0px 20px 0px 0px;
-    
+
+}
+
+.moreinfo-state {
+  display: none;
+}
+
+.moreinfo {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.moreinfo-trigger{
+    display: none;
+}
+.moreinfo-state:checked ~ .moreinfo-wrap .moreinfo {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.moreinfo-state ~ .moreinfo-trigger:before {
+  content: 'Show more';
+}
+
+.moreinfo-state:checked ~ .moreinfo-trigger:before {
+  content: 'Show less';
 }

@@ -99,40 +99,25 @@ getIPs(function(ip){
 
     var el = document.getElementById('ip');
     var li = document.createElement("li");
-    var check = false;
 
     //local IPs
     if (ip.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)){
         if (ip.match(/^(10\.)/)){
-            lip = "Your local IP addresses: " + ip + " - " + "A";
+            lipv4 = ip + " - " + "A";
         }else if (ip.match(/^(172\.(1[6-9]|2\d|3[01]))/)){
-            lip = "Your local IP addresses: " + ip + " - " + "B";
+            lipv4 = ip + " - " + "B";
         }else if (ip.match(/^(192\.168\.)/)){
-            lip = "Your local IP addresses: " + ip + " - " + "C";
+            lipv4 = ip + " - " + "C";
         }else{
-            lip = "Your local IP addresses: " + ip;
+            lipv4 = ip;
         }
     }
     //IPv6 addresses
     else if (ip.match(/^[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7}$/)){
-        ipv6 = "Your IPv6 addresses: " + ip;
-        //el.appendChild(li);
+        ipv6 = ip;
     }
     //assume the rest are public IPs
     else{
-        check = true;
-        try {
-            pip = "Your public IP addresses: " + jip + " - " + jcountryCode;
-        }
-        catch(error) {
-            pip = "Your public IP addresses: " + ip;
-        }
+        pipv4 = ip;
     }
-    //check
-    if(check != true){
-        pip = "Your public IP addresses: " + jip;
-    }
-
-    li.textContent = "Your public IP addresses: " + jip;
-    el.insertBefore( li, el.firstChild );
 });
