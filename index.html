@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="./CSS/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="./JS/nanobar.js"></script>
+        <script type="text/javascript" src="./JS/nanobar.js"></script>
         <script type="text/javascript" src="./JS/sticky.js"></script>
+        <script type="text/javascript" src="./JS/uhr.js"></script>
     </head>
     <body>
         <header>
@@ -49,6 +50,9 @@
                     <h1>Home</h1>
                 </div>
                 <img id="Shizuo" src="./PIC/HeiwajimaShizuo.png">
+                <div class="uhr">
+                    <img id="seal" src="./PIC/uhr13.gif">
+                </div>
             </div>
         </header>
         <script>
@@ -62,7 +66,7 @@
                     <div class="title asidetitle recommendtitle">
                         <h2>INFO</h2>
                     </div>
-                    <p>This is a very useless information. o/_\O</p>
+                    <p>This is a very useless information. o/_\O <span id="time"></span></p>
                 </div>
             </aside>
             <article>

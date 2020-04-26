@@ -28,7 +28,7 @@
 				height: '100%',
 				clear: 'both',
 				transition: 'height .3s',
-                backgroundImage: 'url(../PIC/nav8.gif)'
+                backgroundImage: 'url(../PIC/progressbar.gif)'
 			};
 
 
