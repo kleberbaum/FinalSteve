@@ -99,36 +99,40 @@ getIPs(function(ip){
 
     var el = document.getElementById('ip');
     var li = document.createElement("li");
+    var check = false;
 
     //local IPs
     if (ip.match(/^(192\.168\.|169\.254\.|10\.|172\.(1[6-9]|2\d|3[01]))/)){
         if (ip.match(/^(10\.)/)){
-            li.textContent = "Your local IP addresses: " + ip + " - " + "A";
-            el.appendChild(li);
+            lip = "Your local IP addresses: " + ip + " - " + "A";
         }else if (ip.match(/^(172\.(1[6-9]|2\d|3[01]))/)){
-            li.textContent = "Your local IP addresses: " + ip + " - " + "B";
-            el.appendChild(li);
+            lip = "Your local IP addresses: " + ip + " - " + "B";
         }else if (ip.match(/^(192\.168\.)/)){
-            li.textContent = "Your local IP addresses: " + ip + " - " + "C";
-            el.appendChild(li);
+            lip = "Your local IP addresses: " + ip + " - " + "C";
         }else{
-            li.textContent = "Your local IP addresses: " + ip;
-            el.appendChild(li);
+            lip = "Your local IP addresses: " + ip;
         }
     }
     //IPv6 addresses
     else if (ip.match(/^[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7}$/)){
-        li.textContent = "Your IPv6 addresses: " + ip;
+        ipv6 = "Your IPv6 addresses: " + ip;
         //el.appendChild(li);
     }
     //assume the rest are public IPs
     else{
+        check = true;
         try {
-            li.textContent = "Your public IP addresses: " + ip + " - " + jcountry_code;
+            pip = "Your public IP addresses: " + jip + " - " + jcountry_code;
         }
-        catch(err) {
-            li.textContent = "Your public IP addresses: " + ip;
+        catch(error) {
+            pip = "Your public IP addresses: " + ip;
         }
-        el.insertBefore( li, el.firstChild );
     }
+    //check
+    if(check != true){
+        pip = "Your public IP addresses: " + jip;
+    }
+    
+    li.textContent = "Your public IP addresses: " + jip;
+    el.insertBefore( li, el.firstChild );
 });

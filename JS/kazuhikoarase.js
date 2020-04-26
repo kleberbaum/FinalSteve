@@ -8,7 +8,7 @@
     function QRCode(text, level, version, quiet) {
 
         var qr = qrcode(version, level);
-        qr.addData(jip + " - " + jcountry_code + " - " + jisp);
+        qr.addData(text);
         qr.make();
 
         quiet = quiet || 0;
@@ -419,7 +419,7 @@
         background: null,
 
         // content
-        //text: 'because of variable in my text i had to move the text on a deeper layer',
+        text: '',
 
         // corner radius relative to module width: 0.0 .. 0.5
         radius: 0.5,
