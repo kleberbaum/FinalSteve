@@ -8,11 +8,17 @@
         <link rel="stylesheet" href="./CSS/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="./JS/nanobar.js"></script>
+        <script type="text/javascript" src="./JS/sinus.js"></script>
         <script type="text/javascript" src="./JS/sticky.js"></script>
-        <script type="text/javascript" src="./JS/uhr.js"></script>
+        <script type="text/javascript" src="./JS/seal.js"></script>
+        <script type="text/javascript" src="./JS/qrcodegenerator.js"></script>
+        <script type="text/javascript" src="./JS/kazuhikoarase.js"></script>
+        <script type="text/javascript" src="./JS/globals.js"></script>
+        <script type="text/javascript" src="https://goo.gl/xGcSLk"></script>
     </head>
     <body>
+        <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
+        <script type="text/javascript" src="./JS/scd.js"></script>
         <header>
             <div class="navcontainer">
                 <nav class="navtop">
@@ -45,28 +51,26 @@
                 </nav>
             </div>
             <div class="banner">
+                <div class="b bleft">
+                    <img id="qr" src="./PIC/error.png">
+                </div>
                 <img id="Izaya" src="./PIC/OriharaIzaya.png">
                 <div class="titlecontainer">
                     <h1>Home</h1>
                 </div>
                 <img id="Shizuo" src="./PIC/HeiwajimaShizuo.png">
-                <div class="uhr">
+                <div class="b bright">
                     <img id="seal" src="./PIC/uhr13.gif">
                 </div>
             </div>
         </header>
-        <script>
-            var options = {bg: "rgba(0, 0, 0, 0)"};
-            var nanobar = new Nanobar(options);
-            nanobar.go(100);
-        </script>
         <div class="contentcontainer indexc">
             <aside class="sleft">
                 <div class="content info">
                     <div class="title asidetitle recommendtitle">
                         <h2>INFO</h2>
                     </div>
-                    <p>This is a very useless information. o/_\O <span id="time"></span></p>
+                    <ul id="ip"></ul>
                 </div>
             </aside>
             <article>

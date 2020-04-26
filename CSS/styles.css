@@ -8,12 +8,14 @@
 {
     body {font-size: 10px;}
     .navtop {height: 43px; box-shadow: 0 0 200px 37px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 200px - 43px - 88px);}
+    .b {visibility: hidden;}
+    .dda {min-height: calc(100vh - 200px - 43px - 88px);}
     article {order: 4; width: calc(100% - 286px);}
     .contentcontainer {justify-content: flex-start; flex-direction: column; flex-wrap: wrap;}
     .asidetitle {text-align: left; padding-left: 3px;}
     .sright {order: 3; margin: 18px 0px 0px 0px;}
     .shadowfix {top: calc(43px + 200px); height: calc(100% - 200px - 43px); min-width: 0px;}
+    .pace .pace-progress {top: calc(43px + 200px);}
     .r13 {visibility: hidden;}
 }
 
@@ -21,12 +23,14 @@
 {
     body {font-size: 12px;}
     .navtop {height: 46px; box-shadow: 0 0 200px 37px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 200px - 46px - 88px);}
+    .b {visibility: hidden;}
+    .dda {min-height: calc(100vh - 200px - 46px - 88px);}
     article {order: 4; width: calc(100% - 286px);}
     .contentcontainer {justify-content: flex-start; flex-direction: column; flex-wrap: wrap;}
     .asidetitle {text-align: left; padding-left: 3px;}
     .sright {order: 3; margin: 18px 0px 0px 0px;}
     .shadowfix {top: calc(46px + 200px); height: calc(100% - 200px - 46px); min-width: 0px;}
+    .pace .pace-progress {top: calc(46px + 200px);}
     .r13 {visibility: hidden;}
 }
 
@@ -34,12 +38,14 @@
 {
     body {font-size: 14px;}
     .navtop {height: 49px; box-shadow: 0 0 200px 38.4px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 200px - 49px - 88px);}
+    .b {visibility: hidden;}
+    .dda {min-height: calc(100vh - 200px - 49px - 88px);}
     article {order: 4; width: calc(100% - 286px);}
     .contentcontainer {justify-content: flex-start; flex-direction: column; flex-wrap: wrap;}
     .asidetitle {text-align: left; padding-left: 3px;}
     .sright {order: 3; margin: 18px 0px 0px 0px;}
     .shadowfix {top: calc(49px + 200px); height: calc(100% - 200px - 49px); min-width: 0px;}
+    .pace .pace-progress {top: calc(49px + 200px);}
     .r13 {visibility: hidden;}
 }
 
@@ -47,12 +53,14 @@
 {
     body {font-size: 16px;}
     .navtop {height: 52px; box-shadow: 0 0 200px 37.8px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 200px - 52px - 88px);}
+    .b {visibility: hidden;}
+    .dda {min-height: calc(100vh - 200px - 52px - 88px);}
     article {order: 4; width: calc(100% - 286px);}
     .contentcontainer {justify-content: flex-start; flex-direction: column; flex-wrap: wrap;}
     .asidetitle {text-align: left; padding-left: 3px;}
     .sright {order: 3; margin: 18px 0px 0px 0px;}
     .shadowfix {top: calc(52px + 200px); height: calc(100% - 200px - 52px); min-width: 0px;}
+    .pace .pace-progress {top: calc(52px + 200px);}
     .r13 {visibility: hidden;}
 }
 
@@ -61,12 +69,14 @@
     html {overflow: auto;}
     body {font-size: 16px;}
     .navtop {height: 52px; box-shadow: 0 0 200px 37.8px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 200px - 52px - 88px);}
+    .b {visibility: hidden;}
+    .dda {min-height: calc(100vh - 200px - 52px - 88px);}
     article {order: 4; width: calc(100% - 286px);}
     .contentcontainer {justify-content: flex-start; flex-direction: column; flex-wrap: wrap;}
     .asidetitle {text-align: left; padding-left: 3px;}
     .sright {order: 3; margin: 18px 0px 0px 0px;}
     .shadowfix {top: calc(52px + 200px); height: calc(100% - 200px - 52px); min-width: 0px;}
+    .pace .pace-progress {top: calc(52px + 200px);}
     .r13 {visibility: hidden;}
 }
 
@@ -74,12 +84,14 @@
 {
     body {font-size: 18px;}
     .navtop {height: 55px; box-shadow: 0 0 200px 37.3px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 16vw - 55px - 88px);}
+    .b {visibility: hidden;}
+    .dda {min-height: calc(100vh - 16vw - 55px - 88px);}
     article {order: 4; width: 916px;}
     .contentcontainer {justify-content: flex-start; flex-direction: column; flex-wrap: wrap;}
     .asidetitle {text-align: left; padding-left: 3px;}
     .sright {order: 3; margin: 18px 0px 0px 0px;}
     .shadowfix {top: calc(55px + 16vw); height: calc(100% - 16vw - 55px); min-width: 0px;}
+    .pace .pace-progress {top: calc(55px + 16vw);}
     .r13 {visibility: hidden;}
 }
 
@@ -87,12 +99,14 @@
 {
     body {font-size: 20px;}
     .navtop {height: 58px; box-shadow: 0 0 200px 36.4px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 16vw - 58px - 88px);}
+    .b {visibility: visible;}
+    .dda {min-height: calc(100vh - 16vw - 58px - 88px);}
     article {order: 2; width: 916px;}
     .contentcontainer {justify-content: space-between; flex-direction: row; flex-wrap: nowrap;}
     .asidetitle {text-align: center; padding-left: 0px;}
     .sright {order: 3; margin: 36px 0px 0px 0px;}
     .shadowfix {top: calc(58px + 16vw); height: calc(100% - 16vw - 58px); min-width: 0px;}
+    .pace .pace-progress {top: calc(58px + 16vw);}
     .r13 {visibility: visible;}
 }
 
@@ -100,12 +114,14 @@
 {
     body {font-size: 20px;}
     .navtop {height: 58px; box-shadow: 0 0 200px 36.4px rgb(0, 0, 0);}
-    .dda {height: calc(100vh - 250px - 58px - 88px);}
+    .b {visibility: visible;}
+    .dda {min-height: calc(100vh - 250px - 58px - 88px);}
     article {order: 2; width: 916px;}
     .contentcontainer {justify-content: space-between; flex-direction: row; flex-wrap: nowrap;}
     .asidetitle {text-align: center; padding-left: 0px;}
     .sright {order: 3; margin: 36px 0px 0px 0px;}
     .shadowfix {top: calc(58px + 250px); height: calc(100% - 250px - 58px); min-width: 0px;}
+    .pace .pace-progress {top: calc(58px + 250px);}
     .r13 {visibility: visible;}
 }
 
@@ -144,7 +160,7 @@ body
 
 header
 {
-    
+
 }
 
 aside
@@ -279,7 +295,7 @@ footer
 
 .navtop ul.level2 .active, .navtop ol.level2 .active
 {
-    
+
 }
 
 .banner
@@ -363,17 +379,29 @@ footer
 
 .indexc
 {
-    max-height: 1000px;
+    max-height: 400px;
 }
 
 .indexc .sright
 {
-    max-height: 550px;
+    max-height: 42px;
 }
 
 .indexc aside
 {
-    
+
+}
+
+.projektec
+{
+    min-height: 600px;
+    max-height: 4000px;
+}
+
+.Infoc
+{
+    min-height: 600px;
+    max-height: 4000px;
 }
 
 .impressumc
@@ -418,7 +446,7 @@ footer
 
 .jeffisflyc aside
 {
-    
+
 }
 
 .japanc
@@ -515,7 +543,7 @@ footer
 
 .toctitle
 {
-    
+
 }
 
 .toc ul
@@ -547,7 +575,14 @@ footer
     width: 250px;
     font-size: 14px;
     text-align: left;
+    list-style: none;
     padding: 8px 0px 8px 0px;
+}
+
+.info ul
+{
+    list-style: none;
+    padding: 10px 20px 10px 20px;
 }
 
 .sright
@@ -564,7 +599,7 @@ footer
 
 .chattitle
 {
-    
+
 }
 
 .recommend
@@ -575,7 +610,7 @@ footer
 
 .recommendtitle
 {
-    
+
 }
 
 .recommend ul
@@ -603,8 +638,8 @@ footer
 img
 {
     display: block;
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a:hover 
@@ -614,7 +649,7 @@ a:hover
 
 .active
 {
-    
+
 }
 
 h1 
@@ -843,7 +878,6 @@ ol
     flex: auto;
     margin: 5px;
     background-color: rgba(255, 255, 255, 0.7);
-    background-image: url(../PIC/JP_Electrical_sized.png);
 }
 
 #seal
@@ -852,22 +886,30 @@ ol
     height: 150px;
 }
 
-.uhr
+.bright
 {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    min-width: 300px;
     height: 100%;
-    
+
 }
 
-#kon
+.bleft
 {
-    position: absolute;
-    left: 0px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 300px;
     height: 100%;
+}
+
+.pace .pace-progress {
+    position: absolute;
+    z-index: 39;
+    right: 100%;
+    width: 100%;
+    height: 1px;
+    background-image: url(../PIC/progressbar.gif);
 }

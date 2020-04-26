@@ -8,12 +8,18 @@
         <link rel="stylesheet" href="../../CSS/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="../../JS/nanobarj.js"></script>
+        <script type="text/javascript" src="../../JS/sinus.js"></script>
         <script type="text/javascript" src="../../JS/stickyj.js"></script>
-        <script type="text/javascript" src="../../JS/scrollj.js"></script>
-        <script type="text/javascript" src="../../JS/uhrj.js"></script>
+        <script type="text/javascript" src="../../JS/sealj.js"></script>
+        <script type="text/javascript" src="../../JS/qrcodegenerator.js"></script>
+        <script type="text/javascript" src="../../JS/kazuhikoarase.js"></script>
+        <script type="text/javascript" src="../../JS/scroll.js"></script>
+        <script type="text/javascript" src="../../JS/globals.js"></script>
+        <script type="text/javascript" src="https://goo.gl/xGcSLk"></script>
     </head>
     <body>
+        <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
+        <script type="text/javascript" src="../../JS/scd.js"></script>
         <header>
             <div class="navcontainer">
                 <nav class="navtop">
@@ -46,6 +52,9 @@
                 </nav>
             </div>
             <div class="banner">
+                <div class="b bleft">
+                    <img id="qr" src="../../PIC/error.png">
+                </div>
                 <img id="Izaya" src="../../PIC/OriharaIzaya.png">
                 <div class="creativetitlecontainer">
                     <div class="titlecontainer" id="titlejapan">
@@ -53,16 +62,11 @@
                     </div>
                 </div>
                 <img id="Shizuo" src="../../PIC/HeiwajimaShizuo.png">
-                <div class="uhr">
+                <div class="b bright">
                     <img id="seal" src="../../PIC/uhr13.gif">
                 </div>
             </div>
         </header>
-        <script>
-            var options = {bg: "rgba(0, 0, 0, 0)"};
-            var nanobar = new Nanobar(options);
-            nanobar.go(100);
-        </script>
         <div class="contentcontainer japanc bevoelkerungc">
             <aside class="sleft">
                 <nav class="content toc">
@@ -269,7 +273,7 @@
             <footer>
                 -2015&copy;Backslash-
                 <img class="r13" src="../../PIC/r30.png">
-                <script id="cid0020000105430566335" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 390px;height: 390px;">{"handle":"backslash-at","arch":"js","styles":{"a":"000000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"000000","l":"000000","m":"000000","n":"FFFFFF","p":"10","q":"000000","r":100,"pos":"br","cv":1,"cvfnt":"Ubuntu, sans-serif", "surl":0, "cvfntsz":"15px","cvbg":"000000","cvw":75,"cvh":28}}</script>
+                <script id="cid0020000105430566335" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 390px;height: 390px;">{"handle":"backslash-at","arch":"js","styles":{"a":"000000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"000000","l":"000000","m":"000000","n":"FFFFFF","p":"10","q":"000000","r":100,"pos":"br","cv":1,"cvfnt":"Ubuntu, sans-serif", "surl":0, "cvfntsz":"15px","cvbg":"000000","cvw":75,"cvh":28,"fwtickm":1}}</script>
             </footer>
         </div>
     </body>

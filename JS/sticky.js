@@ -12,6 +12,15 @@ $(document).ready(function() {
         })
     }
 
+    if (navigator.userAgent.toLowerCase().indexOf("edge") > 0)
+    {
+        var el = document.getElementById('ip');
+        var li = document.createElement("li");
+
+        li.textContent = "Your public IP addresses: " + jip + " - " + jcountry_code;
+        el.insertBefore( li, el.firstChild );
+    }
+
     positionFooter();
 
     function positionFooter() {
@@ -43,7 +52,6 @@ $(document).ready(function() {
         }
     }
 
-    $(window)
-        .resize(positionFooter)
+    $(window).resize(positionFooter)
 
 });
