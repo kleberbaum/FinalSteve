@@ -1,8 +1,16 @@
 $(window).bind("load", function() { 
 
-    var $footer = $(".footer"),
-        $shadow = $(".shadowfix"),
-        $contentcontainer = $(".contentcontainer");
+    var $navcontainer = $(".navcontainer"),
+        $contentcontainer = $(".contentcontainer"),
+        $footer = $("footer"),
+        $shadow = $(".shadowfix");
+
+    if (navigator.userAgent.toLowerCase().indexOf("mobile") < 1)
+    {
+        $navcontainer.css({
+            position: "static"
+        })
+    }
 
     positionFooter();
 
@@ -19,7 +27,7 @@ $(window).bind("load", function() {
             $contentcontainer.css({
                 backgroundColor: "rgba(0, 0, 0, 0)",
                 backgroundImage: "url()"
-                
+
             })
         } else {
             $footer.css({
@@ -36,6 +44,6 @@ $(window).bind("load", function() {
     }
 
     $(window)
-    .resize(positionFooter)
+        .resize(positionFooter)
 
 });
