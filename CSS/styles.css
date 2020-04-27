@@ -445,12 +445,14 @@ footer
 
 .indexc
 {
-    max-height: 860px;
+    /*Now defined by the backend*/
+    /*max-height: 1200px;*/
 }
 
 .indexc .sright
 {
-    max-height: 420px;
+    /*Now defined by the backend*/
+    /*max-height: 500px;*/
 }
 
 .indexc aside

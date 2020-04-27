@@ -78,7 +78,25 @@
                     <label for="more-2" class="moreinfo-trigger"></label>
                 </div>
             </aside>
-            <article>
+            <article class="newsfeed">
+                <script type="text/javascript">
+                    $.get('https://www.erebos.xyz/api/graphql?query=query%7Bpage(id%3A%204)%7B...%20on%20SteveStevePage%7Bsections%7B...on%20Steve_S_NewsBlock%7BnewsHead%20newsParagraph%7D...on%20StringBlock%7Bvalue%7D%7D%7D%7D%7D', function(json) {
+                        json.data.page.sections.reverse().forEach(section => {
+                            if(section.newsHead){
+                                $('.newsfeed').prepend(`
+                                    <section class="content main">
+                                        <div class="title maintitle">
+                                            <h2>${section.newsHead}</h2>
+                                        </div>
+                                        ${section.newsParagraph}
+                                    </section>
+                                `);
+                            }else{
+                                $('.newsfeed').prepend(section.value)
+                            }
+                        })
+                    });
+                </script>
                 <section class="content main">
                     <div class="title maintitle">
                         <h2>News - Donnerstag, 15. Oktober 2015</h2>
