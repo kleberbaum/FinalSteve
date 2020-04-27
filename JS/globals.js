@@ -1,7 +1,6 @@
 function getglobal(json) {
-
     jcountry = json.country;
-    jcountryCode = json.countryCode;
+    jcountryCode = json.country_code;
     jregion = json.region;
     jregionName = json.regionName;
     jcity = json.city;
@@ -9,20 +8,19 @@ function getglobal(json) {
     jlat = json.lat;
     jlon = json.lon;
     jtimezone = json.timezone;
-    jisp = json.isp;
+    jisp = json.organization;
     jorg = json.org;
     jas = json.as;
     jreverse = json.reverse;
     jmobile = json.mobile;
     jproxy = json.proxy;
-    jip = json.query;
+    jip = json.ip;
     jstatus = json.status;
     jmessage = json.message;
-    jdns = json.dns;
-    jdnsip = jdns.ip;
-    jdnsinfo = jdns.geo;
+    //jdns = json.dns;
+    //jdnsip = jdns.ip;
+    //jdnsinfo = jdns.geo;
     //lipv4
     //pipv4
     //ipv6
-
 }

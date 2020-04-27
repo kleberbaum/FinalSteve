@@ -1,18 +1,24 @@
 $(document).ready(function() {
 
     online = true;
-    var oldpuip;
-    var oldprip;
-    var oldpdnsip;
-    var oldpdnsinf;
+    geourl = undefined
+    oldpuip = undefined;
+    oldprip = undefined;
+    oldpdnsip = undefined;
+    oldpdnsinf = undefined;
+
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+        geourl = "https://geoip.erebos.xyz/geoip/"+data.split("\n")[2].split("=")[1];
+        InfoData(geourl);
+        re();
+    })
 
     setInterval(function time()
-                {
-
+    {
         //info updater
-        InfoData();
+        InfoData(geourl);
         re();
-    }, 1000);
+    }, 10000);
 
 });
 
@@ -31,7 +37,7 @@ function re()
     });
 }
 
-function InfoData()
+function InfoData(url)
 {
 
     //check if there is a connection to the Internet
@@ -42,17 +48,16 @@ function InfoData()
         $(".moreinfo-trigger").hide();
         InfoOut();
     }else{
-
-        $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+        $.getJSON(url, function(json) {
             //is online
             online = true;
 
-        }).done(function(json) {
+            getglobal(json)
             //public IPs
             //try if it is possible to give the preferred info
-            pipv4s = $("<li>").append($('<a>').prop('href','/user/messages').text("Your public IP addresses: " + json.query + " - " + json.countryCode));
+            pipv4s = $("<li>").append($('<a>').prop('href','/user/messages').text("Your public IP addresses: " + json.ip + " - " + json.country_code));
             InfoOut();
-            online = true;
+
         }).fail(function() {
             if (oldpuip === undefined){
                 //altanativ info
@@ -100,6 +105,6 @@ function InfoOut()
     //output
     $("#ip").append(pipv4s);
     $("#ip").append(lipv4s);
-    $("#ip").append(jdnsips);
-    $("#ip").append(jdnsinfos);
+    //$("#ip").append(jdnsips);
+    //$("#ip").append(jdnsinfos);
 }
