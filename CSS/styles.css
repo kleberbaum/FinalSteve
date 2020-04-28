@@ -419,7 +419,7 @@ footer
 {
     z-index: -1;
     width: 100%;
-    background-image: url(../PIC/gg.gif);
+    /*background-image: url(../PIC/gg.gif);*/
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -439,7 +439,7 @@ footer
     position: relative;
     display: flex;
     min-height: 600px;
-    background-image: url(../PIC/gg.gif);
+    /*background-image: url(../PIC/gg.gif);*/
     background-color: rgba(0, 0, 0, 0.75);
 }
 

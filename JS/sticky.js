@@ -47,7 +47,7 @@ $(document).ready(function() {
             })
             $contentcontainer.css({
                 backgroundColor: "rgba(0, 0, 0, 0.75)",
-                backgroundImage: "url(./PIC/gg.gif)"
+                //backgroundImage: "url(./PIC/gg.gif)"
             })
         }
     }
